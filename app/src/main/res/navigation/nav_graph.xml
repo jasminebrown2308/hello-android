@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.hello.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="language"
+            app:argType="com.example.hello.Language"
+            android:defaultValue="Select" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.hello.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="language"
+            app:argType="com.example.hello.Language" />
+    </fragment>
+</navigation>

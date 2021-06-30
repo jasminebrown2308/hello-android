@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hello</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Back</string>
+
+    <string name="name_placeholder">NAME</string>
+    <string name="button_text">Say hi</string>
+    <string name="hello_text">Hello!</string>
+    <string name="select_language">Select language</string>
+
+    <string name="button_description">Cloud button background image</string>
+    <string name="right_chevron_description">Double right chevron</string>
+    <string name="left_chevron_description">Double left chevron</string>
+    <string name="down_chevron_description">Down chevron</string>
+
+</resources>

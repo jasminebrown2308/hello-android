@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <ImageView
+        android:id="@+id/background_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        tools:layout_editor_absoluteY="30dp">
+
+        <TextView
+            android:id="@+id/hello_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light"
+            android:fontFamily="@font/cera_pro_medium"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/hello_text"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/dropdown_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/left_chevron_description"
+                android:paddingLeft="20dp"
+                android:paddingRight="0dp"
+                android:src="@drawable/chevron_double_left" />
+
+            <Button
+                android:id="@+id/button_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="@font/cera_pro_light"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="0dp"
+                android:paddingTop="20dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:text="@string/previous"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
